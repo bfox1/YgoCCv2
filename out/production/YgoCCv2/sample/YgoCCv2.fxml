@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="828.0" fitWidth="1280.0">
+         <image>
+            <Image url="@Resource/Background.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="828.0" prefWidth="1280.0">
+         <children>
+            <HBox prefHeight="57.0" prefWidth="1213.0">
+               <children>
+                  <ImageView id="Header" fitHeight="72.0" fitWidth="1280.0">
+                     <image>
+                        <Image url="@Resource/Shape 1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    <AnchorPane layoutX="23.0" layoutY="88.0" minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="248.0">
+         <children>
+            <ImageView fitHeight="382.0" fitWidth="248.0" opacity="0.55">
+               <image>
+                  <Image url="@Resource/Shape 4.png" />
+               </image>
+            </ImageView>
+            <ListView fx:id="monsterList" blendMode="MULTIPLY" layoutX="6.0" layoutY="7.0" onMouseClicked="#clearSelections" prefHeight="369.0" prefWidth="237.0" />
+         </children>
+      </AnchorPane>
+    <AnchorPane layoutX="1002.0" layoutY="88.0" minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="248.0">
+         <children>
+            <ImageView fitHeight="382.0" fitWidth="248.0" opacity="0.51">
+               <image>
+                  <Image url="@Resource/Shape 4.png" />
+               </image>
+            </ImageView>
+            <ListView fx:id="trapList" blendMode="MULTIPLY" layoutX="8.0" layoutY="7.0" onMouseClicked="#clearSelections" prefHeight="369.0" prefWidth="237.0" />
+         </children>
+      </AnchorPane>
+    <AnchorPane layoutX="733.0" layoutY="88.0" minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="248.0">
+         <children>
+            <ImageView fitHeight="382.0" fitWidth="248.0" opacity="0.55">
+               <image>
+                  <Image url="@Resource/Shape 4.png" />
+               </image>
+            </ImageView>
+            <ListView fx:id="spellList" blendMode="MULTIPLY" layoutX="7.0" layoutY="7.0" onMouseClicked="#clearSelections" prefHeight="369.0" prefWidth="237.0" />
+         </children>
+      </AnchorPane>
+    <AnchorPane layoutX="305.0" layoutY="88.0" minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="248.0">
+         <children>
+            <ImageView fitHeight="382.0" fitWidth="248.0" opacity="0.54">
+               <image>
+                  <Image url="@Resource/Shape 4.png" />
+               </image>
+            </ImageView>
+            <ListView fx:id="extraMonsterList" blendMode="MULTIPLY" layoutX="7.0" layoutY="7.0" onMouseClicked="#clearSelections" prefHeight="369.0" prefWidth="237.0" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="cardName" alignment="TOP_LEFT" layoutX="28.0" layoutY="789.0" onAction="#typeCardEnter" promptText="Card Name Here" />
+      <AnchorPane layoutX="25.0" layoutY="476.0" prefHeight="300.0" prefWidth="1226.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="1226.0">
+               <image>
+                  <Image url="@Resource/Shape%209.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="rarityField" editable="false" layoutX="106.0" layoutY="50.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="nameField" editable="false" layoutX="106.0" layoutY="14.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="seriesField" editable="false" layoutX="106.0" layoutY="86.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="attributeField" editable="false" layoutX="106.0" layoutY="121.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="typeField" editable="false" layoutX="106.0" layoutY="157.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="attackField" editable="false" layoutX="106.0" layoutY="194.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="defenseField" editable="false" layoutX="384.0" layoutY="157.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="levelField" editable="false" layoutX="384.0" layoutY="14.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="rankField" editable="false" layoutX="384.0" layoutY="50.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="scaleField" editable="false" layoutX="384.0" layoutY="86.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="linkField" editable="false" layoutX="384.0" layoutY="121.0" prefHeight="25.0" prefWidth="190.0">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="pendulumField" layoutX="608.0" layoutY="44.0" prefHeight="86.0" prefWidth="582.0" wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="effectField" layoutX="608.0" layoutY="176.0" prefHeight="86.0" prefWidth="582.0" wrapText="true" />
+            <Text layoutX="22.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " wrappingWidth="66.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rarity: " wrappingWidth="66.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Series:" wrappingWidth="66.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attribute:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="306.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="306.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="306.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="306.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scale:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="306.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Link:" wrappingWidth="83.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="833.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pendulum Effect" textAlignment="CENTER" wrappingWidth="131.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="833.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effect" textAlignment="CENTER" wrappingWidth="131.58203125">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="openButton" layoutX="454.0" layoutY="193.0" mnemonicParsing="false" onAction="#openCardData" text="Open" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="52.0" fitWidth="161.0" layoutX="16.0" layoutY="10.0">
+         <image>
+            <Image url="@Resource/YGOCC%20.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text layoutX="553.0" layoutY="463.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Information" textAlignment="CENTER" wrappingWidth="177.00001168251038">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <Button fx:id="searchButton" layoutX="177.0" layoutY="789.0" mnemonicParsing="false" onAction="#clickedSearchButton" text="Search" />
+   </children>
+</AnchorPane>

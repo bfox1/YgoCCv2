@@ -1,0 +1,13 @@
+{
+  "CardName": "Blue Medicine",
+  "CardAttribute": "SPELL",
+  "CardSeries": "TP1-008",
+  "CardDetails": "Gain 400 Life Points.",
+  "CardEdition": "1st",
+  "CardTypes": [
+    "NORMAL"
+  ],
+  "CardRarity": "Rare",
+  "CardQuantity": "5",
+  "CardPrice": "10.00"
+}

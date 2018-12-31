@@ -1,0 +1,244 @@
+JFDML JFormDesigner: "5.2.5.1.342" Java: "1.8.0_91" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+			"$columnCount": 4
+			"$rowCount": 7
+		} ) {
+			name: "this"
+			"visible": true
+			"minimumSize": new java.awt.Dimension( 750, 750 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cardName"
+				"text": "Card Name:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+					"JavaCodeGenerator.variableName": "cName"
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "packSeries"
+				"text": "Pack Series:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "series"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cardAttribute"
+				"text": "Card Attribute:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "attribute"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cardRarity"
+				"text": "Card Rarity:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "rarity"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 3
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cardType"
+				"text": "Card Type:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "type"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+					"JavaCodeGenerator.variableName": "cType"
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "penScale"
+				"text": "Blue/Red Scale:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "scale"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 3
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "level"
+				"text": "Level/Rank:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "lvl"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cardDescription"
+				"text": "Card Description:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 3
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "description"
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					"wrapStyleWord": true
+					"lineWrap": true
+				} )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 3
+				"row": 3
+				"maximumSize": new java.awt.Dimension( 200, 100 )
+				"preferredSize": new java.awt.Dimension( 200, 100 )
+				"anchor": 8
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "attack"
+				"text": "Attack:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 4
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "atk"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 4
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "penDescription"
+				"text": "Pendulum Description:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 4
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "pendulumEffect"
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea2"
+					"editable": false
+					"lineWrap": true
+					"wrapStyleWord": true
+				} )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 3
+				"row": 4
+				"maximumSize": new java.awt.Dimension( 200, 100 )
+				"preferredSize": new java.awt.Dimension( 200, 100 )
+				"anchor": 8
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "defense"
+				"text": "Defense:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 5
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "def"
+				"text": "text"
+				"editable": false
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "quantity"
+				"text": "Current Possessions:"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 5
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "spinner1"
+				auxiliary() {
+					"JavaCodeGenerator.variableGetter": true
+				}
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 3
+				"row": 5
+				"preferredSize": new java.awt.Dimension( 50, 1 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Save"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "saveButtomClick", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 6
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 550, 415 )
+		} )
+	}
+}
