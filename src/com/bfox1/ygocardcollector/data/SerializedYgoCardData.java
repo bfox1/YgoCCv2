@@ -12,6 +12,7 @@ import java.util.UUID;
 public class SerializedYgoCardData implements Serializable
 {
     static final long serialVersionUID = 7928980448693010399L;
+
     private byte[] searchingName;
 
     private byte[] clientID;
@@ -19,6 +20,7 @@ public class SerializedYgoCardData implements Serializable
     private boolean verified;
 
     private int cardIndex;
+
     public SerializedYgoCardData(String searched, UUID clientID, int cardIndex)
     {
         this.searchingName = serializeData(searched);
@@ -61,8 +63,4 @@ public class SerializedYgoCardData implements Serializable
         return null;
     }
 
-    public void hello()
-    {
-
-    }
 }

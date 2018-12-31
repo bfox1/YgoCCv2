@@ -80,21 +80,18 @@ public class YugiohCardCollector
      * @throws ClassNotFoundException
      * @throws SocketTimeoutException
      */
-    public void beginSearchQuery(CardScouter scounter) throws IOException, ClassNotFoundException, SocketTimeoutException {
-        boolean flag = false;
-
-
-        //this.serverSocket = new Socket("192.168.0.8", 8889);
+    public void beginSearchQuery(CardScouter scounter) throws IOException, ClassNotFoundException, SocketTimeoutException
+    {
 
         this.serverSocket = new Socket();
         this.serverSocket.connect(new InetSocketAddress("68.105.118.194", 8889), 2000);
-        flag = true;
+
         //this.serverSocket = new Socket("192.168.0.2", 8889);
 
         this.toServer = new ObjectOutputStream(serverSocket.getOutputStream());
         this.fromServer = new ObjectInputStream(serverSocket.getInputStream());
         SerializedYgoCardData data = new SerializedYgoCardData(scounter.getName(), this.clientID, this.parseType(scounter.getType()));
-        System.out.println("This is a test. ");
+
         this.toServer.writeObject(data);
 
 

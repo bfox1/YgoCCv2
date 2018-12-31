@@ -160,6 +160,7 @@ public class Controller
 
     }
 
+    @Deprecated
     public void saveCardData()
     {
 
@@ -177,6 +178,7 @@ public class Controller
             card.serializeToJson();
         }*/
     }
+
 
     public void openCardData()
     {
