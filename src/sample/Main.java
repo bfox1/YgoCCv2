@@ -10,11 +10,15 @@ import javafx.stage.StageStyle;
 public class Main extends Application
 {
     private double x,y;
+
+    /**
+     * When using JavaFX, the main class will
+     * @param primaryStage
+     * @throws Exception
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("YgoCCv2.fxml"));
-
-
 
         primaryStage.setScene(new Scene(root));
         primaryStage.initStyle(StageStyle.UNDECORATED);
@@ -35,6 +39,10 @@ public class Main extends Application
     }
 
 
+    /**
+     * Like many Programming languages, all applications require a Main Class.
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
